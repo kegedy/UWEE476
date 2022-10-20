@@ -1,0 +1,65 @@
+{ //Path to folder that contains library for this CAD.
+  //I.E. : "path": "Visvesh_Sathe /home/projects/ee476/sathe/cadence/cad2", 
+  "path": "<Student_Name> /home/projects/ee476/<Student_ID>/<Path_To_Library>",
+
+  "parts": {
+
+    
+    // Introduction, nothing to turn-in   
+    "1": {
+      "files": {"none": "none"}, 
+      "measurements": {"none": "none"}
+    }, 
+   
+   // Schematic-level loaded inverter
+   // (INVD1 sub-circuit)
+    "2": {
+      "files": { 
+        "cad2_turnin/part2/loaded_inverter.ckt" : {
+          "circuit": {
+            "name": "loaded_inverter",
+            "pins": ["vi", "vo"]
+          }
+        }
+      },
+      "measurements": {
+        // VDD @ 0.8V
+        "rise_delay_vdd08": "",
+        "fall_delay_vdd08": "",
+        "rise_time_vdd08":  "",
+        "fall_time_vdd08":  "",
+        // VDD @ 1.2V
+        "rise_delay_vdd12": "",
+        "fall_delay_vdd12": "",
+        "rise_time_vdd12":  "",
+        "fall_time_vdd12":  "",
+      }
+    }, 
+   
+   // Post-layout loaded inverter
+   // (INVD1 sub-circuit)
+    "3": {
+      "files": { 
+        "cad2_turnin/part3/loaded_inverter.ckt" : {
+          "circuit": {
+            "name": "loaded_inverter",
+            "pins": ["vi", "vo"]
+          }
+        }, 
+        "cad2_turnin/part3/INVD1.lvs.report": "none",
+        "cad2_turnin/part3/INVD1.drc.summary": "none", 
+        "cad2_turnin/part3/INVD1.pex.netlist": "none",
+        "cad2_turnin/part3/INVD1.pex.netlist.INVD1.pxi": "none"
+      },
+      "measurements": {
+        "rise_delay": "",
+        "fall_delay": "",
+        "rise_time":  "",
+        "fall_time":  "",
+      }
+    }
+  }, 
+
+  // CAD 2 report
+  "report": "cad2_turnin/cad2_report.pdf"
+}

@@ -1,0 +1,42 @@
+{ //Path to folder that contains library for this CAD.
+  //I.E. : "path": "Visvesh_Sathe /home/projects/ee476/sathe/cadence/cad1", 
+  "path": "<Student_Name> /home/projects/ee476/<Student_ID>/<Path_To_Library>",  
+  
+  "parts": {
+    
+    // IV Characteristics
+    "1": {
+      "files": {"none": "none"}, 
+      "measurements": {"none": "none"}
+    }, 
+   
+    // FETs with Resistances 
+    "2": {
+      "files": {"none": "none"},
+      "measurements": {
+        "rise_time": "",
+        "fall_time": ""
+      }
+    }, 
+   
+    // FETs as Resistances
+    "3": {
+      "files": {"none": "none"},
+      "measurements": {
+        "resistance_25mv": "",
+        "resistance_250mv": ""
+      }
+    }, 
+
+    // Gate Capacitance
+    "4": {
+      "files": {"none": "none"},
+      "measurements": {
+        "gate_cap": ""
+      }
+    } 
+  },
+
+  // CAD 1 report 
+  "report": "cad1_turnin/cad1_report.pdf"
+}
