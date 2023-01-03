@@ -1,0 +1,146 @@
+{ //Path to folder that contains library for this CAD.
+  //I.E. : "path": "Visvesh_Sathe /home/projects/ee476/sathe/cadence/cad4", 
+  "path": "<Student_Name> /home/projects/ee476/<Student_ID>/<Path_To_Library>",
+
+  "parts": {
+    
+    // Flip Flop Schematic
+    "1": {
+      "files": {
+        "cad4_turnin/part1/loaded_flip_flop.ckt": { 
+          "circuit": {
+            "name": "loaded_flip_flop",
+            "pins": ["D", "RST", "Q", "CLK"]
+          }
+        }
+      },
+      "measurements": {
+        "t_cq_rise_vdd08": "",
+        "t_cq_fall_vdd08": "",
+        "t_su_rise_vdd08":  "",
+        "t_su_fall_vdd08":  "",
+        "t_h_rise_vdd08": "",
+        "t_h_fall_vdd08": "",
+        "en_deliv_steady_vdd08": "",
+        "en_deliv_switch_vdd08": "",
+        "t_cq_rise_vdd12": "",
+        "t_cq_fall_vdd12": "",
+        "t_su_rise_vdd12":  "",
+        "t_su_fall_vdd12":  "",
+        "t_h_rise_vdd12": "",
+        "t_h_fall_vdd12": "",
+        "en_deliv_steady_vdd12": "",
+        "en_deliv_switch_vdd12": ""
+      } 
+    }, 
+
+    // Flip Flop Layout (extracted with C+CC)
+    "2": {
+       "files": {
+        "cad4_turnin/part2/loaded_flip_flop.ckt": { 
+          "circuit": {
+            "name": "loaded_flip_flop",
+            "pins": ["D", "RST", "Q", "CLK"]
+          }
+        },
+        "cad4_turnin/part2/DFAR.lvs.report" : "none",
+        "cad4_turnin/part2/DFAR.drc.summary" : "none",
+        "cad4_turnin/part2/DFAR.pex.netlist" : "none",
+        "cad4_turnin/part2/DFAR.pex.netlist.DFAR.pxi" : "none"
+      },
+      "measurements": {
+        "t_cq_rise": "",
+        "t_cq_fall": "",
+        "t_su_rise":  "",
+        "t_su_fall":  "",
+        "t_h_rise": "",
+        "t_h_fall": "",
+        "en_deliv_steady": "",
+        "en_deliv_switch": ""
+      } 
+    }, 
+   
+    // Flip Flop Layout II (extracted with R+C+CC)
+    //  - The DFAR.pex.netlist.pex is an additional file created by R+C+CC
+    "3": {
+        "files": {
+        "cad4_turnin/part3/loaded_flip_flop.ckt": { 
+          "circuit": {
+            "name": "loaded_flip_flop",
+            "pins": ["D", "RST", "Q", "CLK"]
+          }
+        },
+        "cad4_turnin/part3/DFAR.lvs.report" : "none",
+        "cad4_turnin/part3/DFAR.drc.summary" : "none",
+        "cad4_turnin/part3/DFAR.pex.netlist" : "none",
+        "cad4_turnin/part3/DFAR.pex.netlist.DFAR.pxi" : "none",
+        "cad4_turnin/part3/DFAR.pex.netlist.pex" : "none"
+      },
+      "measurements": {
+        "t_cq_rise": "",
+        "t_cq_fall": "",
+        "t_su_rise":  "",
+        "t_su_fall":  "",
+        "t_h_rise": "",
+        "t_h_fall": "",
+        "en_deliv_steady": "",
+        "en_deliv_switch": ""
+      } 
+    }, 
+
+    // LFSR Schematic
+    "4": {
+      "files": {
+        "cad4_turnin/part4/lfsr.ckt": { 
+          "circuit": {
+            "name": "lfsr",
+            "pins": [
+              "RST", "CLK",
+              "state<0>", "state<1>", "state<2>", "state<3>",
+              "state<4>", "state<5>", "state<6>", "state<7>",
+              "state<8>", "state<9>", "state<10>", "state<11>",
+              "state<12>", "state<13>", "state<14>", "state<15>"
+            ]
+          }
+        }
+      },
+      "measurements": {
+        "en_per_clock": ""
+      } 
+    }, 
+
+    // LFSR Layout
+    "5": {
+      "files": {
+        "cad4_turnin/part5/lfsr.ckt": { 
+          "circuit": {
+            "name": "lfsr",
+            "pins": [
+              "RST", "CLK",
+              "state<0>", "state<1>", "state<2>", "state<3>",
+              "state<4>", "state<5>", "state<6>", "state<7>",
+              "state<8>", "state<9>", "state<10>", "state<11>",
+              "state<12>", "state<13>", "state<14>", "state<15>"
+            ]
+          }
+        },
+        "cad4_turnin/part5/LFSR.lvs.report" : "none",
+        "cad4_turnin/part5/LFSR.drc.summary" : "none",
+        "cad4_turnin/part5/LFSR.pex.netlist" : "none",
+        "cad4_turnin/part5/LFSR.pex.netlist.LFSR.pxi" : "none"
+      },
+      "measurements": {
+        "en_per_clock": ""
+      } 
+    }, 
+
+    // Additional Questions
+    "6": {
+      "files": {"none": "none"}, 
+      "measurements": {"none": "none"}
+    } 
+  },
+  
+  // CAD 4 Report
+  "report": "cad4_turnin/cad4_report.pdf"
+}
